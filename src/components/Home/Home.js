@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.css'
 
-const Text_Utils = () => {
+const Home = () => {
   return (
      <div>
-         TextUtils
+         Home
      </div>
   );
 };
 
-export default Text_Utils;
+export default Home;

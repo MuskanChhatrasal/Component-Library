@@ -5,7 +5,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from './components/page/Home';
+import Home from './components/Home/Home';
 import Alert from './components/Alerts/Alert';
 import Avatar from './components/Avatar/Avatar';
 import Badges from './components/Badges/Badges';
