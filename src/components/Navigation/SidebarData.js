@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaCartPlus, FaEnvelopeOpenText } from 'react-icons/fa'
 import { AiFillHome } from 'react-icons/ai'
-import { IoIosPaper, IoMdHelpCircle, IoMdPeople } from "react-icons/io"
+import {IoMdHelpCircle, IoMdPeople } from "react-icons/io"
+import { MdAddAlert} from 'react-icons/md'
 
 export const SIdebarData = [
     {
@@ -13,7 +14,7 @@ export const SIdebarData = [
     {
         title: "Alerts",
         path: "/alert",
-        icon: <IoIosPaper />,
+        icon: <MdAddAlert />,
         cName: 'nav-text'
     },
     {

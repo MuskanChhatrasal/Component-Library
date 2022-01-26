@@ -5,16 +5,16 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { SIdebarData } from './SidebarData'
 import { IconContext } from 'react-icons/lib'
 import "./Navbar.css"
+import Sidebar from '../Sidebar/Sidebar'
 const Navbar = () => {
 
-    const [sidebar, setSidebar] = useState(false)
+    // const [sidebar, setSidebar] = useState(false)
 
-    const showSidebar = () => {
-        setSidebar(!sidebar)
-    }
+    // const showSidebar = () => {
+    //     setSidebar(!sidebar)
     return (
         <>
-            <IconContext.Provider value={{ color: "#fff" }}>
+            {/* <IconContext.Provider value={{ color: "#fff" }}>
                 <div className="navbar">
                     <Link to="#" className="menu-bars">
                         <FaBars onClick={showSidebar} />
@@ -27,7 +27,12 @@ const Navbar = () => {
                             <Link to="#" className='menu-bars'>
                                 <AiOutlineClose />
                             </Link>
-                        </li>
+                        </li> */}
+                        <div className='header'>
+                            <h1>mussu UI</h1>
+                        </div>
+                        <Sidebar />
+                        {/* <div className='sidebar'>
                         {
                             SIdebarData.map((item, index) => {
                                 return (
@@ -42,9 +47,10 @@ const Navbar = () => {
                                 )
                             })
                         }
-                    </ul>
+                        </div> */}
+                    {/* </ul>
                 </nav>
-            </IconContext.Provider>
+            </IconContext.Provider> */}
         </>
     )
 }
